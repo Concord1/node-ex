@@ -1,34 +1,18 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Store User Input</title>
-    <script>
-      function storeData() {
-        const userInput = document.getElementById('userInput').value;
-        const payload = {
-          userInput: userInput
-        };
+<head>
+  <title>Netlify Button Example</title>
+</head>
+<body>
+  <label for="userId">User ID:</label>
+  <input type="text" id="userId" placeholder="Enter User ID">
 
-        fetch('', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(payload)
-        })
-          .then(response => response.json())
-          .then(data => {
-            // Handle the response from the server if needed
-          })
-          .catch(error => {
-            // Handle any errors that occur during the request
-          });
-      }
-    </script>
-  </head>
-  <body>
-    <input type="text" id="userInput" />
-    <button onclick="storeData()">Save</button>
-  </body>
+  <label for="xyz">X|Y|Z:</label>
+  <input type="text" id="xyz" placeholder="Enter X|Y|Z">
+
+  <button id="lambdaButton">Trigger Lambda Function</button>
+
+  <script src="script.js"></script>
+</body>
 </html>
