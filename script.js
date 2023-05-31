@@ -23,6 +23,7 @@ document.getElementById('lambdaButton').addEventListener('click', function() {
         console.log('Lambda function invoked successfully:', xhr.responseText);
         // Handle the response from the Lambda function as needed
       } else {
+        console.log(xhr.status)
         console.error('Error invoking Lambda function:', xhr.status);
       }
     }
