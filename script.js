@@ -5,7 +5,7 @@ document.getElementById('lambdaButton').addEventListener('click', function() {
   var xyz = document.getElementById('xyz').value;
 
   // Configure API Gateway endpoint URL
-  var apiEndpoint = 'https://YOUR_API_GATEWAY_ENDPOINT.execute-api.YOUR_AWS_REGION.amazonaws.com/YOUR_API_STAGE';
+  var apiEndpoint = 'https://mlohmjoh65.execute-api.us-east-2.amazonaws.com/default/dynamodemo';
 
   // Prepare JSON payload
   var payload = {
